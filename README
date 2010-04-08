@@ -1,0 +1,13 @@
+Minilyzer
+http://patrickmylund.com/projects/minilyzer/
+
+Minilyzer is a Windows shell script that uses Microsoft's Debugging Tools for
+Windows to analyze the Minidump files that are created when a BSOD occurs and
+generate a report detailing the event. Full memory dumps (C:\Windows\Memory.dmp)
+can also be analyzed.
+
+Usage:
+  1. Run minilyzer.cmd. It will attempt to analyze the newest DMP file in %WinDir%\Minidump.
+  2. Drag and drop a Minidump file onto the script.
+  3. From a command prompt, type e.g.: minilyzer.cmd "C:\Windows\Minidump\Mini012309-01.dmp".
+  4. Change the minidump_file variable in the script, then run it.
